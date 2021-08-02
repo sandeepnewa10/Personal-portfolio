@@ -10600,6 +10600,61 @@ Services
 }
 
 /********************
+Portfolio
+********************/
+.portfolio__content-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1.6rem;
+  margin-bottom: 3rem;
+}
+.portfolio__content-wrap:nth-child(2n+1) {
+  grid-template-areas: "portfolio-content portfolio-figure";
+}
+.portfolio__content-wrap:nth-child(2n+2) {
+  grid-template-areas: "portfolio-figure portfolio-content";
+}
+.portfolio__content-wrap .portfolio-content {
+  grid-area: portfolio-content;
+  padding: 2rem;
+}
+.portfolio__content-wrap .portfolio-figure {
+  grid-area: portfolio-figure;
+}
+
+/********************
+Testimonial
+********************/
+.testimonial__content {
+  text-align: center;
+}
+.testimonial__content .figure {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/********************
+Blog
+********************/
+.blog__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr;
+  grid-template-areas: "blog-figure blog-info";
+  grid-gap: 1.2rem;
+}
+.blog__content .blog-figure {
+  grid-area: blog-figure;
+}
+.blog__content .blog-info {
+  grid-area: blog-info;
+}
+
+/********************
 About
 ********************/
 /********************
