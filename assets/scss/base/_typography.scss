@@ -1,10 +1,9 @@
 /**
  * Basic typography style for copy text
  */
-// body {
-//   color: $text-color;
-//   font: normal 125% / 1.4 $text-font-stack;
-// }
+ body{
+    color: #fff;
+}
 
 blockquote {
 	font-weight: 100;
@@ -40,4 +39,11 @@ blockquote:after {
 cite {
 	line-height: 3;
 	text-align: left;
+}
+
+.h2{
+	font-family: 'DM Serif Display', serif;
+}
+.bg-success{
+	background-color: #FEC158;
 }

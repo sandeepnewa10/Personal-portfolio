@@ -1,9 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-body{
-    
-}
-.navbar{
+body {}
+
+// .navbar-dark .navbar-nav .nav-link
+
+.navbar-dark {
+    padding: 1.4rem 0;
     background-color: #242533;
+
+    .navbar-nav {
+        .nav-item {
+            text-transform: uppercase;
+
+            &.active {
+
+                .nav-link {
+                    color: #FEC158;
+                    border-bottom: 1px solid #FEC158;
+                }
+            }
+
+            &:hover {
+
+                .nav-link {
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+    }
+
 }
