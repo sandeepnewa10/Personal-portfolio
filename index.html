@@ -11,52 +11,50 @@
     <link rel="stylesheet" href="assets/plugins/awesomefont/css/all.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"> Tech Stack </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="nav navbar-nav navbar-logo ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skill">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonial</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <a id="top"></a>
 
+    <nav class="navbar navbar-expand-md navbar-dark ">
+      <div class="container">
+          <a class="navbar-brand href="#">Tech Stack</a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="collapseNavbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skill</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+
+
+ 
     <section id="home">
       <div class="container">
         <div class="row">
@@ -658,6 +656,69 @@
         </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="container contact">
+        <div class="row">
+          <div class="page-title">
+            <h2>
+             Contact
+            </h2>
+          </div>
+          <div class="col-md-6">
+            <div class="contact__wrap">
+              <div class="map">
+                <img src="assets/images/map.jpg"
+                class="img-fluid" alt="Map">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact__wrap">
+              <div class="contact-form">
+
+                <form>
+                  <div class="mb-3">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control">
+                   
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                    
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    
+                    <textarea name="message" class="form-control" cols="30" rows="10"></textarea>
+                    
+                  </div>
+                
+                 
+                
+                
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span>&copy; 2021 Tech Stack -  All Rights Reserved.</span>
+             </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#top" class="top-arrow"><i class="fas fa-chevron-up"></i></a>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>

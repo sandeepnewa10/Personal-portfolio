@@ -10475,6 +10475,10 @@ h2, .h2, h3, .h3 {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none;
+}
+
 blockquote {
   font-weight: 100;
   font-size: 2rem;
@@ -10519,9 +10523,18 @@ cite {
   background-color: #FEC158;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-dark {
   padding: 1.4rem 0;
   background-color: #242533;
+}
+.navbar-dark .navbar-brand {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
 }
 .navbar-dark .navbar-nav .nav-item {
   text-transform: uppercase;
@@ -10534,6 +10547,40 @@ cite {
   border-bottom: 1px solid #fff;
 }
 
+.top-arrow {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  width: 2rem;
+  height: 2.5rem;
+  border: 1px solid #fff 0.3;
+  text-align: center;
+  animation: bounch 2s infinite;
+}
+.top-arrow i {
+  line-height: 2.5;
+}
+
+/* The animation code */
+@keyframes bounch {
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 1.5rem;
+  }
+  70% {
+    bottom: 1rem;
+  }
+  90% {
+    bottom: 1.5rem;
+  }
+  100% {
+    bottom: 1.2rem;
+  }
+}
 section:nth-child(2n+1) {
   background: #333647;
   background-size: 150%;
@@ -10586,6 +10633,7 @@ Skill
 ********************/
 .skill__content-wrap {
   margin-bottom: 1rem;
+  padding: 1rem;
   overflow: hidden;
 }
 .skill__content-wrap h3, .skill__content-wrap .h3 {
@@ -10636,10 +10684,12 @@ Testimonial
 }
 .testimonial__content .figure {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   overflow: hidden;
   border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /********************
@@ -10651,12 +10701,44 @@ Blog
   grid-template-rows: 1.5fr;
   grid-template-areas: "blog-figure blog-info";
   grid-gap: 1.2rem;
+  margin-bottom: 2rem;
 }
 .blog__content .blog-figure {
   grid-area: blog-figure;
 }
 .blog__content .blog-info {
   grid-area: blog-info;
+}
+.blog__content .blog-info .cat {
+  padding-right: 0.5rem;
+  font-size: 0.8rem;
+}
+.blog__content .blog-info .date {
+  font-size: 0.8rem;
+}
+.blog__content .blog-info h3, .blog__content .blog-info .h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.blog__content .blog-info h3 a, .blog__content .blog-info .h3 a {
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.3rem;
+}
+
+/********************
+Contact
+********************/
+.contact__wrap .contact-form {
+  padding: 2rem 1rem;
+}
+
+footer {
+  padding: 0.8rem 0;
+  text-align: center;
+  background-color: #333647;
 }
 
 /********************

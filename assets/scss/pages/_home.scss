@@ -68,6 +68,7 @@ Skill
 .skill {
     &__content-wrap {
         margin-bottom: 1rem;
+        padding:1rem;
         overflow: hidden;
 
         h3 {
@@ -143,10 +144,12 @@ Testimonial
 
         .figure {
             position: relative;
-            width: 100px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             overflow: hidden;
             border-radius: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
 
         }
     }
@@ -164,7 +167,7 @@ Blog
         grid-template-areas:
             "blog-figure blog-info";
         grid-gap: 1.2rem;
-
+        margin-bottom: 2rem;
         .blog-figure {
             grid-area: blog-figure;
 
@@ -172,7 +175,47 @@ Blog
 
         .blog-info {
             grid-area: blog-info;
+            .cat{
+                padding-right:0.5rem;
+                font-size: 0.8rem;
+            }
+            .date{
+                font-size: 0.8rem;
+            }
+            h3{
+                font-size: 1rem;
+                margin-top:0.5rem;
+                margin-bottom:1.5rem;
+                a{
+                    text-decoration: none;
+                    border: none;
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 0.3rem;
+                }
+            }
 
         }
     }
+}
+
+
+/********************
+Contact
+********************/
+.contact{
+    
+    &__wrap{
+        .map{
+
+        }
+        .contact-form{
+            padding:2rem 1rem;
+        }
+    }
+}
+
+footer{
+    padding:0.8rem 0;
+    text-align: center;
+    background-color: #333647;
 }
