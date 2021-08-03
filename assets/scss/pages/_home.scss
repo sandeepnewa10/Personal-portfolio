@@ -68,7 +68,7 @@ Skill
 .skill {
     &__content-wrap {
         margin-bottom: 1rem;
-        padding:1rem;
+        padding: 1rem;
         overflow: hidden;
 
         h3 {
@@ -110,17 +110,6 @@ Portfolio
         grid-template-rows: 1fr;
         grid-gap: 1.6rem;
         margin-bottom: 3rem;
-
-        &:nth-child(2n+1) {
-            grid-template-areas:
-                "portfolio-content portfolio-figure";
-
-        }
-
-        &:nth-child(2n+2) {
-            grid-template-areas:
-                "portfolio-figure portfolio-content";
-        }
 
         .portfolio-content {
             grid-area: portfolio-content;
@@ -168,6 +157,7 @@ Blog
             "blog-figure blog-info";
         grid-gap: 1.2rem;
         margin-bottom: 2rem;
+
         .blog-figure {
             grid-area: blog-figure;
 
@@ -175,18 +165,22 @@ Blog
 
         .blog-info {
             grid-area: blog-info;
-            .cat{
-                padding-right:0.5rem;
+
+            .cat {
+                padding-right: 0.5rem;
                 font-size: 0.8rem;
             }
-            .date{
+
+            .date {
                 font-size: 0.8rem;
             }
-            h3{
+
+            h3 {
                 font-size: 1rem;
-                margin-top:0.5rem;
-                margin-bottom:1.5rem;
-                a{
+                margin-top: 0.5rem;
+                margin-bottom: 1.5rem;
+
+                a {
                     text-decoration: none;
                     border: none;
                     border-bottom: 1px solid $white;
@@ -202,20 +196,283 @@ Blog
 /********************
 Contact
 ********************/
-.contact{
-    
-    &__wrap{
-        .map{
+.contact {
 
-        }
-        .contact-form{
-            padding:2rem 1rem;
+    &__wrap {
+        .map {}
+
+        .contact-form {
+            padding: 2rem 1rem;
         }
     }
 }
 
-footer{
-    padding:0.8rem 0;
-    text-align: center;
-    background-color: #333647;
+
+
+@media (max-width: 767.98px) {
+    .services {
+        &__content {
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+
+            .icon {
+                i {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #home {
+        .intro__content {
+            padding: 3rem 0;
+
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 2rem
+            }
+
+            h1 {
+                margin-bottom: 1rem;
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    section {
+        padding: 3rem 0;
+    }
+
+    .page-title {
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .skill {
+        &__content-wrap {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            overflow: hidden;
+
+            h3 {
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    .portfolio {
+        &__content-wrap {
+            grid-gap: 1rem;
+            margin-bottom: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "portfolio-figure"
+                "portfolio-content";
+
+            .portfolio-content {
+                padding: 0.5rem;
+
+            }
+
+            .portfolio-figure {}
+        }
+    }
+
+
+    .blog {
+        &__content {
+
+            margin-bottom: 1rem;
+
+            .blog-figure {}
+
+            .blog-info {
+
+
+                .cat {
+                    padding-right: 0.5rem;
+                    font-size: 0.8rem;
+                }
+
+                .date {
+                    font-size: 0.8rem;
+                }
+
+                h3 {
+                    margin-top: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    .portfolio {
+        &__content-wrap {
+            grid-gap: 1rem;
+            margin-bottom: 3rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1.5fr;
+
+            &:nth-child(2n+1) {
+                grid-template-areas:
+                    "portfolio-figure portfolio-content";
+
+            }
+
+            &:nth-child(2n+2) {
+                grid-template-areas:
+                    "portfolio-content portfolio-figure";
+            }
+
+            .portfolio-content {
+                padding: 1rem;
+
+            }
+
+            .portfolio-figure {}
+        }
+    }
+
+}
+
+
+// @media (min-width: 576px) and (max-width: 767px) {
+//     section {
+//         padding: 3rem 0;
+//     }
+
+//     .page-title {
+//         margin-bottom: 2rem;
+
+//         h2 {
+//             font-size: 2rem;
+//         }
+//     }
+
+//     .skill {
+//         &__content-wrap {
+//             margin-bottom: 0.5rem;
+//             padding: 0.5rem;
+//             overflow: hidden;
+
+//             h3 {
+//                 margin-bottom: 1rem;
+//             }
+
+//             .progress {
+
+//             }
+//         }
+//     }
+
+
+// }
+
+// @media (min-width: 768px) and (max-width: 991px) {
+
+//     section {
+//         padding: 5rem 0;
+//     }
+
+//     .page-title {
+//         margin-bottom: 2rem;
+
+//         h2 {
+//             font-size: 2rem;
+//         }
+//     }
+
+//     .skill {
+//         &__content-wrap {
+//             margin-bottom: 0.5rem;
+//             padding: 0.5rem;
+//             overflow: hidden;
+
+//             h3 {
+//                 margin-bottom: 1rem;
+//             }
+
+//             .progress {
+//                 //margin-bottom: 1rem;
+//             }
+//         }
+//     }
+//         .portfolio {
+//             &__content-wrap {
+//                 grid-gap: 1rem;
+//                 margin-bottom: 1rem;
+
+//                 &:nth-child(2n+1) {
+//                     grid-template-areas:
+//                         "portfolio-figure portfolio-content";
+
+//                 }
+
+//                 &:nth-child(2n+2) {
+//                     grid-template-areas:
+//                         "portfolio-figure portfolio-content";
+//                 }
+
+//                 .portfolio-content {
+//                     grid-area: portfolio-content;
+//                     padding: 0.5rem;
+
+//                 }
+
+//                 .portfolio-figure {
+//                     grid-area: portfolio-figure;
+
+//                 }
+//             }
+//         }
+
+//         .blog {
+//             &__content {
+
+//                 margin-bottom: 0.7rem;
+
+//                 .blog-figure {
+//                     grid-area: blog-figure;
+
+//                 }
+
+//                 .blog-info {
+//                     grid-area: blog-info;
+
+//                     .cat {
+//                         padding-right: 0.5rem;
+//                         font-size: 0.8rem;
+//                     }
+
+//                     .date {
+//                         font-size: 0.8rem;
+//                     }
+
+//                     h3 {
+//                         margin-top: 0.5rem;
+//                         margin-bottom: 1.5rem;
+//                     }
+
+//                 }
+//             }
+//         }
+//     }

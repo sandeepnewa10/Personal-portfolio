@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-// @import
-//   'abstracts/functions',
-//   'abstracts/mixins';
+@import
+  'abstracts/functions',
+  'abstracts/mixins';
 
 // 2. Vendors
 @import
-'../plugins/bootstrap/scss/functions',
-'abstracts/variables',
-'../plugins/bootstrap/scss/bootstrap';
+  '../plugins/bootstrap/scss/functions',
+  'abstracts/variables',
+  '../plugins/bootstrap/scss/bootstrap';
 
 // 3. Base stuff
 @import
@@ -23,17 +23,10 @@
   'layout/header',
   'layout/footer';
 
-// 5. Components
-// @import
-//   'components/button';
-
 // 6. Page-specific styles
 @import
   'pages/home';
 
-// 7. Themes
-@import
-  'themes/default';
 
 
 
